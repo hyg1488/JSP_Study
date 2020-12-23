@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> exDay1209 프로젝트 테스트</h1>
+	<h3><a href = "guest_list"> 방명록 바로가기</a></h3>
+	javascript<br>
+	javascript:history.back(); : 이전 페이지로 돌아가게 하는 자바스크립트 매서드<br>
+	get 방식 : 보안에 취약<br>
+	post 방식 : 보안에 강점<br>
+	
+	
+	a href="guest_write.jsp?page=1&now=10&kor=100" ! img src="./img/write.gif" border="0" ! /a <br>
+	guest_write.jsp?page=1&now=10&kor=100 <br>
+	지정 경로에 ?변수명=데이터 입력시 해당 데이터도 함께 전송<br>
+	<p>
+	<h3> input 과 Button </h3>
+	input button : 자바스크립트를 이용할때 사용</p>
+	input submit : 전송 용도<br>
+	input type = "reset"<br>
+	<br>
+	<h4> submit 사용시 </h4><br>
+	!! form method="post" action="guest_list.jsp" name="guest"<br>
+	submit은 action이 있어야함<br>
+	submit의 문제점 : 함수에 if문 실행후, form 에 액션이 있기때문에 액션을 수행해버림...<br>
+	페이지 오류시 그 페이지에 남아있어야하는데 액션을 수행해서 다른 페이지로 가버리는 문제.<br>
+	<br>
+	<h4> 버튼 사용시 </h4><br>
+	!! input type="button" value="전송하기" onclick="send()"
+	</p>
+	function send() {<br>
+	alert("전송입니다.");<br>
+	guest.action ="guest_list.jsp";<br>
+	guest.submit();<br>
+	}
+	
+	<echo>
+	function send() {
+	if(guest.name.value == ""){
+		alert("이름 입력");
+		guest.name.focus();
+		return;
+	}else if(guest.subject.value ==""){
+		alert("제목 입력");
+		guest.subject.focus();
+		return;
+	}else if(guest.contents.value==""){
+		alert("내용 입력");
+		guest.contents.focus();
+		return;
+	}
+	alert("전송입니다.");
+	guest.action ="guest_write_pro.jsp";
+	guest.submit();
+}
+	</echo>
+	
+	자바 출력 코드 => <%= 
+	</p>
+</body>
+</html>
