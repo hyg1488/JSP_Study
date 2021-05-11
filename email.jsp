@@ -29,11 +29,8 @@ if(document.join.email.options[document.join.email.selectedIndex].value == '9'){
 <select name="email" onchange="email_change()">
 
     <option value="0" >선택하세요</option>
-
     <option value="9">직접입력</option>
-
     <option value="naver.com">naver.com</option>
-
     <option value="nate.com">nate.com</option> 
 
    </select>
