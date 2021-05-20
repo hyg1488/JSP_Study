@@ -21,9 +21,7 @@ if(document.join.email.options[document.join.email.selectedIndex].value == '9'){
 </script>
 
 <form name="join">      
-
 <input type="text" name="email1" value="이메일" onfocus="this.value='';">   @
-
 <input type="text" name="email2" value="" disabled >
 
 <select name="email" onchange="email_change()">
