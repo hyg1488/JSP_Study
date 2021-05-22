@@ -30,6 +30,5 @@ if(document.join.email.options[document.join.email.selectedIndex].value == '9'){
     <option value="naver.com">naver.com</option>
     <option value="nate.com">nate.com</option> 
    </select>
-
 </form>
 
