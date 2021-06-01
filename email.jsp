@@ -15,13 +15,11 @@ function email_change(){
    document.join.email2.value = document.join.email.options[document.join.email.selectedIndex].value;
   }
 }
-
 </script>
 
 <form name="join">      
 <input type="text" name="email1" value="이메일" onfocus="this.value='';">   @
 <input type="text" name="email2" value="" disabled >
-
 <select name="email" onchange="email_change()">
     <option value="0" >선택하세요</option>
     <option value="9">직접입력</option>
