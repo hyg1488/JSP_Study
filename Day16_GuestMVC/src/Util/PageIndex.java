@@ -20,7 +20,6 @@ public class PageIndex {
 	  	} else {
 	  		s_pre = "<img src=Guest/img/i_prev.gif width=30 height=7> ";
 	  	}
-
 	  	// 번호 표시부분	
 	  	for(int i=0;i<10;i++,idx_start++) {
 	  		if(idx_start>totpage) break;
@@ -44,8 +43,7 @@ public class PageIndex {
 	}
 
 	public static String pageListHan(int page,int totpage,String url,String query, String key) {
-		int idx_pre, idx_start;
-		  	
+		int idx_pre, idx_start	
 		String s_pre = "";    // Prev 저장 변수
 		String s_idx = "";    // 번호 저장 변수
 		String s_next = "";   // Next 저장 변수
