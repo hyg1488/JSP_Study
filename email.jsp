@@ -1,6 +1,5 @@
 <script type="text/javascript">
 
- 
 function email_change(){
  if(document.join.email.options[document.join.email.selectedIndex].value == '0'){
   document.join.email2.disabled = true;
