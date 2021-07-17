@@ -15,7 +15,6 @@ function email_change(){
   }
 }
 </script>
-
 <form name="join">      
 <input type="text" name="email1" value="이메일" onfocus="this.value='';">   @
 <input type="text" name="email2" value="" disabled >
@@ -26,4 +25,3 @@ function email_change(){
     <option value="nate.com">nate.com</option> 
    </select>
 </form>
-
