@@ -5,11 +5,11 @@ import java.net.URLEncoder;
 public class PageIndex {
 	public static String pageList(int page,int totpage,String url,String addtag) {
 		int idx_pre, idx_start;
-		  	
+		
 		String s_pre = "";    // Prev(이전) 저장 변수
 		String s_idx = "";    // 번호 저장 변수
 		String s_next = "";   // Next 저장 변수
-
+		
 		idx_start = ((page-1) / 10) * 10 + 1 ;  // 시작 페이지 계산
 		idx_pre = ((page-1) / 10);              // Priview 페이지 계산
 
@@ -49,7 +49,6 @@ public class PageIndex {
 		String s_pre = "";    // Prev 저장 변수
 		String s_idx = "";    // 번호 저장 변수
 		String s_next = "";   // Next 저장 변수
-
 		idx_start = ((page-1) / 10) * 10 + 1 ;  // 시작 페이지 계산
 		idx_pre = ((page-1) / 10);              // Priview 페이지 계산
 
@@ -71,6 +70,7 @@ public class PageIndex {
 	  			s_idx = s_idx + "&search="+query+"&key=" + URLEncoder.encode(key) + "'> " + idx_start + " </a> ";
 	  		}
 	  	}
+		
 		// Next 표시부분
 	  	if(idx_start <= totpage ) {
 	  		s_next = "<a href='"+url+"?page="+idx_start+ "&search="+query+"&key="+ URLEncoder.encode(key)+"'>"
