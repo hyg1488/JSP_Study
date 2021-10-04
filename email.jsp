@@ -15,7 +15,6 @@ function email_change(){
    document.join.email2.value = document.join.email.options[document.join.email.selectedIndex].value;
   }
 }
- 
 </script>
 
 <form name="join">      
