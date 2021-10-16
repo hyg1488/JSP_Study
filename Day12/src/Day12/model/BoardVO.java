@@ -2,7 +2,6 @@ package Day12.model;
 
 // VO (Value Object) - 값을 객체로 처리하겠다는 의미
 // 테이블 하나당 VO 하나인 경우도 있고 통합하는 경우도 있음 + 데이터 은닉 (private)
-
 public class BoardVO {
 	private int idx;
 	private String name;
