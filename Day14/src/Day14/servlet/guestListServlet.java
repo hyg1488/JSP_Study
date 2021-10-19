@@ -34,7 +34,6 @@ public class guestListServlet extends HttpServlet {
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("Guest/guest_list.jsp");
 		dispatcher.forward(request, response);
-		
 	}
 
 	
