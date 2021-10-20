@@ -10,8 +10,6 @@ public class MemberBean {
 	private String job;
 	private String intro;
 	
-	
-	
 	public String getGubun() {
 		return gubun;
 	}
